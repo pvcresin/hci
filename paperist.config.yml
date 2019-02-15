@@ -1,0 +1,57 @@
+plugins:
+  remark-behead:
+    after: null
+    depth: 1
+templateDir: .paperist/ejs
+imageConfigs:
+  keepaspectratio: true
+  width: 0.9\linewidth
+  height: 0.25\paperheight
+documentInfo:
+  fontpreset: ipaex
+  flags:
+    interaction: false
+    acknowledgment: true
+    appendix: true
+    english:
+      author: true
+      abstract: true
+  title:
+    ja: 情報処理学会論文誌ジャーナル論文の準備方法\\（2012年10月12日版）
+    en: How to Prepare Your Paper for IPSJ Journal \\ (version 2012/10/12)
+  date:
+    year: 2019
+    month: 3
+  keywords:
+    ja:
+      - 情報処理学会論文誌ジャーナル
+      - \LaTeX
+    en:
+      - IPSJ Journal
+      - "``Dos and Dont's'' list"
+  affiliates:
+    - id: Meiji
+      isPresent: false
+      name:
+        ja: 明治大学
+        en: Meiji Uniersity
+  authors:
+    - affiliateIds:
+        - Meiji
+      name:
+        ja: 鳥山 らいか
+        en: Raika Toriyama
+    - affiliateIds:
+        - Meiji
+      name:
+        ja: 宮下 芳明
+        en: Homei Miyashita
+  documentclass: jsbook
+  documentoptions:
+    - uplatex
+    - english
+    - a4paper
+    - 10pt
+    - oneside
+    - onecolumn
+    - openany
