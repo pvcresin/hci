@@ -11,30 +11,24 @@ documentInfo:
   fontpreset: ipaex
   flags:
     interaction: false
-    acknowledgment: true
-    appendix: true
+    acknowledgment: false
+    appendix: false
     english:
-      author: true
-      abstract: true
+      author: false
+      abstract: false
   title:
-    ja: 情報処理学会論文誌ジャーナル論文の準備方法\\（2012年10月12日版）
-    en: How to Prepare Your Paper for IPSJ Journal \\ (version 2012/10/12)
+    ja: >
+      InvisibleFlick: 小型タッチスクリーン端末における\\キートップが透明な日本語入力キーボード
   date:
     year: 2019
     month: 3
-  keywords:
-    ja:
-      - 情報処理学会論文誌ジャーナル
-      - \LaTeX
-    en:
-      - IPSJ Journal
-      - "``Dos and Dont's'' list"
+  keywords: []
   affiliates:
     - id: Meiji
       isPresent: false
       name:
         ja: 明治大学
-        en: Meiji Uniersity
+        en: Meiji University
   authors:
     - affiliateIds:
         - Meiji

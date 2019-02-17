@@ -1,32 +1,19 @@
----
-baseTemplate: .paperist/templates/index.tex
----
-
 <!-- TODO
 
-フォント変更
-関連研究にWISSの自分の入れる
-    # 関連研究
-    我々は以前，スマートウォッチ向けのアイズフリー日本語
-    入力手法を提案した [5]．
-    本手法では，子音選択，母音選択
-
-我々は以前，スマートウォッチ向けのアイズフリー日本語
-入力手法を提案した [5]．
-本手法では，子音選択，母音選択
-
-自分メモ
-
 付箋メモ
+
 	InvisibleFlick
 		ガイド（境界線）も最後はインビジブルが良かったりする？
 
 	議論
 		速度やエラー率を超えた価値を考えてみるか
 		スマートウォッチに縛られない持論
+
 -->
 
 # はじめに {#sec:intro}
+
+本章において，本研究の背景，目的とアプローチ，および構成について述べる．
 
 ## 背景 {#sec:background}
 
@@ -53,7 +40,7 @@ Fat Finger問題[@FatFinger]を引き起こしてしまう．
 フリックキーボードでは，タップ位置で子音，フリック方向で母音を指定して文字入力を行う．
 フリック操作により，キー押下を繰り返すトグル入力よりも軽負担で素早い操作を行うことができる．
 
-![フリックキーボードの例．「り」と入力する場合，「ら」行にタッチダウンし，左方向にフリックする．](../assets/flick.jpg){#fig:flick width=0.65\\linewidth}
+![フリックキーボードの例．「り」と入力する場合，「ら」行にタッチダウンし，左方向にフリックする．](../assets/flick.jpg){#fig:flick width=0.85\\linewidth,height=0.15\\paperheight}
 
 小型端末における日本語入力キーボードが
 数多く提案されている[@slideIn;@BubbleSlide;@hari;@ShuttleBoard]．
@@ -77,6 +64,15 @@ Fat Finger問題[@FatFinger]を引き起こしてしまう．
 InvisibleFlickの性能を評価するため，
 一般的なフリックキーボードとの比較実験を行い，
 文字入力速度，エラー率，および印象評価の分析を行った．
+
+## 本論文の構成
+
+[@sec:intro]章では，本研究の背景，目的とアプローチを示した．
+[@sec:related]章では，本研究の関連研究を示す．
+[@sec:system]章では，本研究の提案するキーボードとその操作方法を示す．
+[@sec:experiment]章では，InvisibleFlickと既存手法との比較実験について述べる．
+[@sec:discussion]章では，本研究の議論点を述べる．
+[@sec:conclusion]章では，本研究の結論を述べる．
 
 # 関連研究 {#sec:related}
 
@@ -131,10 +127,12 @@ ETAO Keyboard[@ETAO]はアルファベットを順に3つの領域に分け，�
 TouchOne Keyboard[@TouchOne]やMinuum Keyboard[@Minuum]がある．
 これらの手法では，1つのキーに3-4個のアルファベットを割り当てており，辞書を用いて単語を特定する．
 辞書に載っていない単語は，1文字ずつ入力する必要がある．
+5-TILES Keyboard[@five]も1つのキーに5-6個のアルファベットを割り当てているが，
+指を横にスワイプさせることで文字を押し分ける．
 
 ## 日本語の入力を対象としたソフトウェアキーボード
 
-![Google日本語入力](../assets/screen-google-round.png){#fig:google width=0.45\\linewidth}
+![Google日本語入力](../assets/screen-google-round.png){#fig:google width=0.85\\linewidth,height=0.15\\paperheight}
 
 Wear OS by Google[^wearos]を搭載する端末では，
 テンキー配列のフリックキーボードであるGoogle日本語入力[@google]を使用できる（図[@fig:google]）．
@@ -166,7 +164,7 @@ ShuttleBoard[@ShuttleBoard]は10個の子音キーと5個の母音キーで構�
 
 # InvisibleFlick {#sec:system}
 
-![InvisibleFlickの各部の名称と機能](../assets/system-parts.png){#fig:parts width=1.0\\linewidth}
+![InvisibleFlickの各部の名称と機能](../assets/system-parts.png){#fig:parts width=0.85\\linewidth}
 
 InvisibleFlickは，テンキー部分のキートップが透明な日本語入力キーボードである．
 日本語入力手法として一般的なフリックキーボードと同様に，
