@@ -8,7 +8,7 @@ imageConfigs:
   width: 0.9\linewidth
   height: 0.25\paperheight
 documentInfo:
-  fontpreset: ipaex
+  fontpreset: sourcehan-otc
   flags:
     interaction: false
     acknowledgment: false
@@ -17,7 +17,7 @@ documentInfo:
       author: false
       abstract: false
   title:
-    ja: >
+    ja: |
       InvisibleFlick: 小型タッチスクリーン端末における\\キートップが透明な日本語入力キーボード
   date:
     year: 2019
